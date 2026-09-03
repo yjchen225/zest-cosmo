@@ -92,7 +92,7 @@ h3 { font-size: 18px; }
 .search-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .search-tags button, .no-results button:not(.button) { border: 1px solid var(--border); border-radius: 50px; background: transparent; padding: 8px 16px; }
 .mini-product { display: flex; align-items: center; gap: 15px; padding: 10px 0; border-bottom: 1px solid var(--border); }
-.mini-image { flex: 0 0 72px; width: 72px; height: 72px; background: url("/assets/cosmo-products.png") center / 210% no-repeat; }
+.mini-image { flex: 0 0 72px; width: 72px; height: 72px; background: url("./assets/cosmo-products.png") center / 210% no-repeat; }
 .mini-product div:last-child { display: flex; flex-direction: column; }
 .mini-product small { margin-top: 4px; }
 .empty-drawer { display: flex; flex-direction: column; gap: 12px; padding-top: 70px; text-align: center; }
@@ -121,7 +121,7 @@ h3 { font-size: 18px; }
 .newsletter form { width: 100%; max-width: 400px; margin: 10px 0; }
 .footer-bottom { display: flex; justify-content: space-between; margin-top: 70px; padding-top: 20px; border-top: 1px solid #d8d4ce; font-size: 10px; letter-spacing: .7px; }
 
-.hero { position: relative; height: min(840px, calc(100vh - 30px)); min-height: 650px; display: flex; align-items: center; padding: 90px var(--page) 40px; color: white; overflow: hidden; background: linear-gradient(90deg, rgba(20,15,12,.52), rgba(20,15,12,.03)), url("/assets/cosmo-hero.png") center / cover no-repeat; }
+.hero { position: relative; height: min(840px, calc(100vh - 30px)); min-height: 650px; display: flex; align-items: center; padding: 90px var(--page) 40px; color: white; overflow: hidden; background: linear-gradient(90deg, rgba(20,15,12,.52), rgba(20,15,12,.03)), url("./assets/cosmo-hero.png") center / cover no-repeat; }
 .hero-content { position: relative; z-index: 2; width: min(610px, 48vw); margin-top: 40px; }
 .hero-content h1 { font-family: "Libre Baskerville", serif; font-size: clamp(43px, 5.2vw, 72px); }
 .hero-content > p:not(.eyebrow) { max-width: 410px; margin-bottom: 28px; font-size: 17px; }
@@ -136,7 +136,7 @@ h3 { font-size: 18px; }
 .tabs button.active { border-color: var(--ink); }
 .product-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(15px, 2vw, 30px); }
 .product-card { min-width: 0; }
-.product-image { position: relative; display: block; aspect-ratio: 1; overflow: hidden; background: url("/assets/cosmo-products.png") center / 205% no-repeat; }
+.product-image { position: relative; display: block; aspect-ratio: 1; overflow: hidden; background: url("./assets/cosmo-products.png") center / 205% no-repeat; }
 .crop-cleanser { background-position: 4% 54% !important; }
 .crop-cream { background-position: 90% 5% !important; }
 .crop-serum { background-position: 52% 94% !important; }
@@ -159,7 +159,7 @@ h3 { font-size: 18px; }
 .editorial-split.reverse { grid-template-columns: .85fr 1.15fr; }
 .editorial-split.reverse .editorial-image { order: 2; }
 .editorial-image { min-height: 600px; }
-.ritual-image { background: url("/assets/cosmo-ritual.png") center 28% / cover no-repeat; }
+.ritual-image { background: url("./assets/cosmo-ritual.png") center 28% / cover no-repeat; }
 .editorial-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(50px, 7vw, 110px); }
 .editorial-copy h2 { font-size: clamp(38px, 4.5vw, 58px); }
 .editorial-copy p:not(.eyebrow) { max-width: 480px; margin-bottom: 30px; }
@@ -174,14 +174,14 @@ h3 { font-size: 18px; }
 .routine-detail p { max-width: 500px; }
 .routine-detail a { font-size: 12px; font-weight: 500; }
 .collection-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
-.collection-card { position: relative; aspect-ratio: .8; overflow: hidden; background: url("/assets/cosmo-hero.png") center / cover; }
+.collection-card { position: relative; aspect-ratio: .8; overflow: hidden; background: url("./assets/cosmo-hero.png") center / cover; }
 .collection-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 55%, rgba(20,18,16,.56)); }
 .collection-card span { position: absolute; z-index: 2; left: 24px; right: 20px; bottom: 22px; display: flex; flex-direction: column; color: white; }
 .collection-card strong { font-size: 23px; font-weight: 400; }
 .collection-card small { margin-top: 4px; }
-.collection-two { background-image: url("/assets/cosmo-ritual.png") !important; background-position: 60% 30% !important; }
-.collection-three { background-image: url("/assets/cosmo-products.png") !important; background-position: 55% !important; }
-.collection-four { background-image: url("/assets/cosmo-hero.png") !important; background-position: 75% !important; }
+.collection-two { background-image: url("./assets/cosmo-ritual.png") !important; background-position: 60% 30% !important; }
+.collection-three { background-image: url("./assets/cosmo-products.png") !important; background-position: 55% !important; }
+.collection-four { background-image: url("./assets/cosmo-hero.png") !important; background-position: 75% !important; }
 .marquee { overflow: hidden; padding: 20px 0; background: var(--primary); color: white; font-family: "Libre Baskerville", serif; font-size: 22px; white-space: nowrap; }
 .marquee div { width: max-content; animation: marquee 18s linear infinite; }
 @keyframes marquee { to { transform: translateX(-50%); } }
@@ -189,7 +189,7 @@ h3 { font-size: 18px; }
 .comparison { position: relative; aspect-ratio: 1.15; overflow: hidden; }
 .comparison-base, .comparison-after { position: absolute; inset: 0; }
 .comparison-after { clip-path: inset(0 calc(100% - var(--split)) 0 0); border-right: 2px solid white; }
-.hero-image-mask { background: url("/assets/cosmo-hero.png") 68% center / cover no-repeat; filter: saturate(.8) brightness(1.06); }
+.hero-image-mask { background: url("./assets/cosmo-hero.png") 68% center / cover no-repeat; filter: saturate(.8) brightness(1.06); }
 .comparison input { position: absolute; z-index: 4; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; }
 .comparison::after { content: "↔"; position: absolute; z-index: 3; left: var(--split); top: 50%; display: grid; width: 44px; height: 44px; place-items: center; transform: translate(-50%,-50%); border-radius: 50%; background: white; }
 .before-label, .after-label { position: absolute; z-index: 3; bottom: 15px; padding: 5px 8px; background: rgba(255,255,255,.9); font-size: 10px; }
@@ -202,13 +202,13 @@ h3 { font-size: 18px; }
 .press blockquote { margin: 15px auto 25px; font-family: "Libre Baskerville"; font-size: clamp(26px, 3vw, 40px); line-height: 1.35; }
 .social-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 .social-grid > div { aspect-ratio: 1; }
-.product-contact-image { background: url("/assets/cosmo-products.png") center / cover no-repeat; }
-.hero-crop { background: url("/assets/cosmo-hero.png") 72% center / cover no-repeat; }
-.ritual-crop-two { background: url("/assets/cosmo-ritual.png") 68% 65% / cover no-repeat; }
+.product-contact-image { background: url("./assets/cosmo-products.png") center / cover no-repeat; }
+.hero-crop { background: url("./assets/cosmo-hero.png") 72% center / cover no-repeat; }
+.ritual-crop-two { background: url("./assets/cosmo-ritual.png") 68% 65% / cover no-repeat; }
 
 .breadcrumbs { display: flex; gap: 9px; padding: 20px 0; color: #7b756f; font-size: 12px; }
 .breadcrumbs a { color: var(--ink); }
-.collection-banner { position: relative; min-height: 340px; display: grid; place-items: center; padding: 50px var(--page); color: white; text-align: center; background: linear-gradient(rgba(25,20,17,.35), rgba(25,20,17,.45)), url("/assets/cosmo-hero.png") center 72% / cover; }
+.collection-banner { position: relative; min-height: 340px; display: grid; place-items: center; padding: 50px var(--page); color: white; text-align: center; background: linear-gradient(rgba(25,20,17,.35), rgba(25,20,17,.45)), url("./assets/cosmo-hero.png") center 72% / cover; }
 .collection-banner > div { max-width: 610px; }
 .collection-banner h1 { margin: 0 0 10px; font-size: 48px; }
 .collection-layout { display: grid; grid-template-columns: 220px 1fr; gap: 45px; padding-block: 60px 100px; }
@@ -225,9 +225,9 @@ h3 { font-size: 18px; }
 
 .product-detail { display: grid; grid-template-columns: 1.5fr .7fr; gap: 55px; align-items: start; padding-bottom: var(--section); }
 .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-.gallery-tile { aspect-ratio: 1; background: url("/assets/cosmo-products.png") center / 200% no-repeat; }
+.gallery-tile { aspect-ratio: 1; background: url("./assets/cosmo-products.png") center / 200% no-repeat; }
 .gallery-tile.wide { grid-column: 1 / -1; aspect-ratio: 2 / 1; }
-.ritual-product-crop { background: url("/assets/cosmo-ritual.png") 66% 80% / 210% no-repeat; }
+.ritual-product-crop { background: url("./assets/cosmo-ritual.png") 66% 80% / 210% no-repeat; }
 .purchase-panel { position: sticky; top: 25px; padding-top: 20px; }
 .purchase-panel h1 { margin-bottom: 6px; font-size: 34px; }
 .product-subtitle { color: #6f6963; }
@@ -267,7 +267,7 @@ h3 { font-size: 18px; }
 .cart-empty-page h2 { font-size: 42px; }
 .cart-page-grid { display: grid; grid-template-columns: 1fr 380px; gap: 80px; padding: 50px 0 80px; }
 .cart-page-line { display: grid; grid-template-columns: 140px 1fr auto; gap: 25px; padding: 0 0 30px; margin-bottom: 30px; border-bottom: 1px solid var(--border); }
-.cart-page-img { width: 140px; height: 140px; background: url("/assets/cosmo-products.png") center / 210% no-repeat; }
+.cart-page-img { width: 140px; height: 140px; background: url("./assets/cosmo-products.png") center / 210% no-repeat; }
 .cart-page-line h2 { margin-bottom: 5px; font-size: 19px; }
 .cart-page-line p { margin: 3px 0; color: #756f69; }
 .order-summary { padding: 30px; background: var(--surface-2); }
@@ -286,16 +286,16 @@ h3 { font-size: 18px; }
 .center-heading { max-width: 720px; margin: 65px auto 55px; text-align: center; }
 .center-heading h1 { margin-bottom: 12px; }
 .collection-index { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding-bottom: var(--section); }
-.collection-index-card { position: relative; min-height: 500px; display: flex; flex-direction: column; justify-content: space-between; padding: 25px; color: white; background: linear-gradient(rgba(0,0,0,.06), rgba(0,0,0,.5)), url("/assets/cosmo-hero.png") center / cover; }
+.collection-index-card { position: relative; min-height: 500px; display: flex; flex-direction: column; justify-content: space-between; padding: 25px; color: white; background: linear-gradient(rgba(0,0,0,.06), rgba(0,0,0,.5)), url("./assets/cosmo-hero.png") center / cover; }
 .collection-index-card > span { font-size: 12px; }
 .collection-index-card h2 { margin-bottom: 4px; font-family: "Libre Baskerville"; font-size: 40px; }
 .collection-index-card p { margin-bottom: 8px; }
 .collection-index-card i { font-style: normal; font-size: 12px; }
-.promo-banner { min-height: 500px; display: flex; align-items: center; justify-content: flex-end; padding: 50px 10%; color: white; background: linear-gradient(90deg, rgba(0,0,0,.05), rgba(0,0,0,.6)), url("/assets/cosmo-products.png") center / cover; }
+.promo-banner { min-height: 500px; display: flex; align-items: center; justify-content: flex-end; padding: 50px 10%; color: white; background: linear-gradient(90deg, rgba(0,0,0,.05), rgba(0,0,0,.6)), url("./assets/cosmo-products.png") center / cover; }
 .promo-banner > div { max-width: 450px; }
 .promo-banner h2 { font-size: 50px; }
 
-.content-hero { min-height: 680px; display: flex; align-items: center; padding: 90px var(--page); color: white; background: linear-gradient(90deg, rgba(20,17,15,.55), rgba(20,17,15,.05)), url("/assets/cosmo-hero.png") center / cover; }
+.content-hero { min-height: 680px; display: flex; align-items: center; padding: 90px var(--page); color: white; background: linear-gradient(90deg, rgba(20,17,15,.55), rgba(20,17,15,.05)), url("./assets/cosmo-hero.png") center / cover; }
 .content-hero > div { max-width: 620px; }
 .content-hero h1 { font-size: clamp(50px, 6vw, 80px); }
 .content-hero p:not(.eyebrow) { max-width: 470px; font-size: 17px; }
@@ -343,14 +343,14 @@ h3 { font-size: 18px; }
 .account-switch { margin-top: 25px; text-align: center; }
 .back-link { margin-bottom: 50px; }
 
-.lookbook-hero { min-height: 760px; display: flex; align-items: flex-end; padding: 80px var(--page); color: white; background: linear-gradient(0deg, rgba(15,13,12,.55), transparent 60%), url("/assets/cosmo-hero.png") center / cover; }
+.lookbook-hero { min-height: 760px; display: flex; align-items: flex-end; padding: 80px var(--page); color: white; background: linear-gradient(0deg, rgba(15,13,12,.55), transparent 60%), url("./assets/cosmo-hero.png") center / cover; }
 .lookbook-hero > div { max-width: 700px; }
 .lookbook-hero h1 { font-size: clamp(55px, 7vw, 90px); }
 .lookbook-intro { display: grid; grid-template-columns: 1fr 2fr; }
 .lookbook-intro > span { color: var(--primary); font-family: "Libre Baskerville"; font-size: 60px; }
 .lookbook-intro > div { max-width: 700px; }
 .lookbook-intro h2 { font-size: 52px; }
-.hotspot-scene { position: relative; min-height: 800px; background: url("/assets/cosmo-products.png") center / cover; }
+.hotspot-scene { position: relative; min-height: 800px; background: url("./assets/cosmo-products.png") center / cover; }
 .hotspot { position: absolute; z-index: 2; width: 42px; height: 42px; border: 8px solid rgba(255,255,255,.4); border-radius: 50%; background: white; background-clip: padding-box; font-size: 20px; animation: pulse 2s infinite; }
 @keyframes pulse { 50% { box-shadow: 0 0 0 10px rgba(255,255,255,.15); } }
 .hotspot-card { position: absolute; z-index: 3; width: 300px; display: flex; gap: 12px; padding: 12px; background: white; }
@@ -361,7 +361,7 @@ h3 { font-size: 18px; }
 .lookbook-grid > div:first-child, .lookbook-grid > div:last-child { min-height: 600px; }
 .lookbook-grid > div:nth-child(2) { padding: 30px; }
 .lookbook-grid > div:nth-child(2) > span { color: var(--primary); font-family: "Libre Baskerville"; font-size: 50px; }
-.lookbook-end { min-height: 620px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 50px; color: white; text-align: center; background: linear-gradient(rgba(20,17,15,.35), rgba(20,17,15,.5)), url("/assets/cosmo-ritual.png") center 25% / cover; }
+.lookbook-end { min-height: 620px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 50px; color: white; text-align: center; background: linear-gradient(rgba(20,17,15,.35), rgba(20,17,15,.5)), url("./assets/cosmo-ritual.png") center 25% / cover; }
 .lookbook-end h2 { font-size: 55px; }
 
 @media (max-width: 900px) {

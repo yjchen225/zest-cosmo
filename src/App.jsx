@@ -1,6 +1,23 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 
-const A = "/assets/";
+const BASE_PATH = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+function stripBasePath(pathname) {
+  const path = BASE_PATH && pathname.startsWith(BASE_PATH)
+    ? pathname.slice(BASE_PATH.length)
+    : pathname;
+
+  if (!path || path === "/") return "/page-home";
+  return path.startsWith("/") ? path : `/${path}`;
+}
+
+function withBasePath(path) {
+  return `${BASE_PATH}${path}`;
+}
+
+function currentAppPath() {
+  return `${stripBasePath(window.location.pathname)}${window.location.search}`;
+}
 
 const routes = [
   ["Home", "/page-home"],
@@ -35,15 +52,15 @@ const collections = [
 ];
 
 function usePath() {
-  const initial = window.location.pathname === "/" ? "/page-home" : window.location.pathname;
+  const initial = currentAppPath();
   const [path, setPath] = useState(initial);
   useEffect(() => {
-    const onPop = () => setPath(window.location.pathname);
+    const onPop = () => setPath(currentAppPath());
     window.addEventListener("popstate", onPop);
     return () => window.removeEventListener("popstate", onPop);
   }, []);
   const navigate = (to) => {
-    window.history.pushState({}, "", to);
+    window.history.pushState({}, "", withBasePath(to));
     setPath(to);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -70,7 +87,7 @@ function Link({ to, navigate, className = "", children, onClick }) {
   return (
     <a
       className={className}
-      href={to}
+      href={withBasePath(to)}
       onClick={(e) => {
         e.preventDefault();
         onClick?.();
